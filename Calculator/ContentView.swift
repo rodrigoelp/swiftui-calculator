@@ -3,6 +3,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    // If you want to know where this store is created and injected, you need
+    // to browse the SceneDelegate and find the reference there.
     @EnvironmentObject var store: AppStore
 
     var body: some View {

@@ -15,7 +15,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Create the SwiftUI view that provides the window contents.
         let contentView = ContentView()
-            .environmentObject(AppStore())
+            .environmentObject(AppStore()) // This is required to initialise the store/state and allow the content view
+            // to receive it (injected by the framework)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
